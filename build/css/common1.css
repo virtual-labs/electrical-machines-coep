@@ -1,0 +1,116 @@
+/*Initialize*/
+/*
+	
+
+ul#tmp li {
+	
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+ul#tmp li ul {
+	display: inline-table;
+	width: 20px;
+	height: 10px;
+	
+	
+}
+
+
+ul#menu li#graph-options {
+	text-align: center;
+	color: black;
+	
+}
+ul#menu li#graph-options :hover {
+ color:black;
+ display:inline-block;
+   
+ 
+}
+ul#menu li#graph-options a:hover {
+ color:blue;
+}
+/*Link Appearance*/
+/*
+ul#menu li a, ul#menu li ul.sub-menu li {
+	text-decoration: none;
+	color: #fff;
+	
+}
+ul#menu li a, ul#menu li ul.sub-menu li:hover {
+	color:blue;
+}
+/*Make the parent of sub-menu relative*/
+/*
+ul#menu li {
+	position: relative;
+	  color: #000000;
+}
+
+/*sub menu*/
+/*
+ ul#menu li ul.sub-menu {
+	display: none;
+	position: absolute;
+	top: 28px;
+	left: 0;
+	
+	
+}
+ ul#menu li:hover ul.sub-menu {
+	display: block;
+
+}
+ 
+	*/
+	
+	/*Initialize*/
+
+#tmp li {
+ 
+ list-style: none;
+ position: relative;
+ display: inline-table;
+
+}
+
+#tmp li ul {
+ display: inline-table;
+ width: 20px;
+ height: 10px;
+ 
+}
+
+ul#menu li#graph-options a {
+ text-align: center;
+ color: black;
+}
+ul#menu li#graph-options a:hover {
+ color:blue;
+}
+ul#menu li, ul#menu ul.sub-menu li a {
+ color: black;
+}
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub-menu li {
+ text-decoration: none;
+ color: #fff;
+}
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+ position: relative;
+}
+/*sub menu*/
+ul#menu li ul.sub-menu {
+ display: none;
+ position: absolute;
+ top: 28px;
+ left: 0;
+}
+ul#menu li:hover ul.sub-menu {
+ display: block;
+}
+
+/****again some modifications from here***/

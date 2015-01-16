@@ -1,0 +1,483 @@
+<html>
+	<head>
+		<title>Electrical Machine Lab -- CoEP</title>
+		<link   type="text/css"  rel="stylesheet"  href="../css/common.css">
+		<link type="text/css" rel="stylesheet" href="../css/common1.css" />
+		<link type="text/css" rel="stylesheet" href="../css/emlstylesheet.css" />
+		<link type="text/css" rel="stylesheet" href="../css/kendo.common.css" />
+		<link type="text/css" rel="stylesheet" href="../css/kendo.default.css" />
+		<link type="text/css" rel="stylesheet" href="../css/kendo.black.css" />
+		<script type="text/javascript" src="../lib/jquery.min.js"></script>
+		<script type="text/javascript" src="../lib/jquery-ui-1.8.18.custom.min.js"></script>
+		<script type="text/javascript" src="../lib/backbone.js"></script>
+		<script type="text/javascript" src="../lib/kendo.all.js"></script>
+		<script type="text/javascript" src="../lib/tmpl.js"></script>
+		<script type="text/javascript" src="../lib/highcharts.js"></script>
+		<script type="text/javascript" src="../js/view/Switch.js"></script>
+		<script type="text/javascript" src="../js/view/exp3Switch.js"></script>
+		<script type="text/javascript" src="../js/view/exp3Switch1.js"></script>
+		<script type="text/javascript" src="../js/view/exp2Switch1.js"></script>
+		<script type="text/javascript" src="../js/view/exp2Switch2.js"></script>
+		<script type="text/javascript" src="../js/view/exp2Switch3.js"></script>
+		<script type="text/javascript" src="../js/view/exp2Switch4.js"></script>
+		<script type="text/javascript" src="../js/view/exp2Switch5.js"></script>
+		<script type="text/javascript" src="../js/view/exp1bSwitch.js"></script>
+		<script type="text/javascript" src="../js/view/exp4aSwitch.js"></script>
+		<script type="text/javascript" src="../js/view/exp4bSwitch.js"></script>
+		<script type="text/javascript" src="../js/view/exp5Switch.js"></script>
+		<script type="text/javascript" src="../js/view/exp7aSwitch.js"></script>
+		<script type="text/javascript" src="../js/view/exp7aSwitch1.js"></script>
+		<script type="text/javascript" src="../js/view/exp7bSwitch.js"></script>
+		<script type="text/javascript" src="../js/view/exp8Switch.js"></script>
+		<script type="text/javascript" src="../js/view/exp9Switch.js"></script>
+		<!--loading landing.js-->
+		<script type="text/javascript" src="../js/landing.js"></script>
+		<!--loading controller.js-->
+		<script type="text/javascript" src="../js/controller/controller.js"></script>
+		<script type="text/javascript" src="../js/model/elementmodel.js"></script>
+		<script type="text/javascript" src="../js/collection/elementcollection.js"></script>
+		<script type="text/javascript" src="../js/data/datastore.js"></script>
+		<script type="text/javascript" src="../js/data/Exp4aDataStore.js"></script>
+		<script type="text/javascript" src="../js/data/Exp4bDataStore.js"></script>
+		<script type="text/javascript" src="../js/data/Exp5DataStore.js"></script>
+		<script type="text/javascript" src="../js/data/Exp9DataStore.js"></script>
+		<script type="text/javascript" src="../js/data/Exp1bDataStore.js"></script>
+		<script type="text/javascript" src="../js/data/Exp2DataStore.js"></script>
+		<script type="text/javascript" src="../js/data/Exp3DataStore.js"></script>
+		<script type="text/javascript" src="../js/data/Exp7aDataStore.js"></script>
+		<script type="text/javascript" src="../js/data/Exp7bDataStore.js"></script>
+		<script type="text/javascript" src="../js/data/Exp8DataStore.js"></script>
+		<script type="text/javascript" src="../js/graph/graph.js"></script>
+		<!--loading view.js-->
+		<script type="text/javascript" src="../js/view/view.js"></script>
+		<script type="text/javascript" src="../js/view/boilerplate.js"></script>
+		<script type="text/javascript" src="../js/view/singlephasercload.js"></script>
+		<script type="text/javascript" src="../js/view/voltmeterdc.js"></script>
+		<script type="text/javascript" src="../js/view/ammeterdc.js"></script>
+		<script type="text/javascript" src="../js/view/coupling.js"></script>
+		<script type="text/javascript" src="../js/view/threephivvf.js"></script>
+		<script type="text/javascript" src="../js/view/spst.js"></script>
+		<script type="text/javascript" src="../js/view/dpst.js"></script>
+		<script type="text/javascript" src="../js/view/dpdt.js"></script>
+		<script type="text/javascript" src="../js/view/slippingRotor.js"></script>
+		<script type="text/javascript" src="../js/view/dcVariable.js"></script>
+		<script type="text/javascript" src="../js/view/shortCircuit.js"></script>
+		<script type="text/javascript" src="../js/view/mechRotor.js"></script>
+		<script type="text/javascript" src="../js/view/powerFactor.js"></script>
+		<script type="text/javascript" src="../js/view/threepRLLoad.js"></script>
+		<script type="text/javascript" src="../js/view/threepRCLoad.js"></script>
+		<script type="text/javascript" src="../js/view/threepResisLoad.js"></script>
+		<script type="text/javascript" src="../js/view/byPass.js"></script>
+		<script type="text/javascript" src="../js/view/swiTPST.js"></script>
+		<script type="text/javascript" src="../js/view/swiTPDT.js"></script>
+		<script type="text/javascript" src="../js/view/singlepACvol.js"></script>
+		<script type="text/javascript" src="../js/view/dcVoltage.js"></script>
+		<script type="text/javascript" src="../js/view/salientRotor.js"></script>
+		<script type="text/javascript" src="../js/view/squiRotor.js"></script>
+		<script type="text/javascript" src="../js/view/rheostat.js"></script>
+		<script type="text/javascript" src="../js/view/spresisLoad.js"></script>
+		<script type="text/javascript" src="../js/view/sprlLoad.js"></script>
+		<script type="text/javascript" src="../js/view/variactphac.js"></script>
+		<script type="text/javascript" src="../js/view/threephacvoltsrc.js"></script>
+		<script type="text/javascript" src="../js/view/acvoltmeter.js"></script>
+		<script type="text/javascript" src="../js/view/tachometer.js"></script>
+		<script type="text/javascript" src="../js/view/variacspac.js"></script>
+		<script type="text/javascript" src="../js/view/cylrotor.js"></script>
+		<script type="text/javascript" src="../js/view/selfexciteddc.js"></script>
+		<script type="text/javascript" src="../js/view/sepexciteddc.js"></script>
+		<script type="text/javascript" src="../js/view/wattmeter.js"></script>
+		<script type="text/javascript" src="../js/view/ammeterac.js"></script>
+		<script type="text/javascript" src="../js/view/sinphvvvf.js"></script>
+		<script type="text/javascript" src="../js/view/exp2.js"></script>
+		<script type="text/javascript" src="../js/view/exp3.js"></script>
+		<script type="text/javascript" src="../js/view/exp1a.js"></script>
+		<script type="text/javascript" src="../js/view/exp5.js"></script>
+		<script type="text/javascript" src="../js/view/exp6a.js"></script>
+		<script type="text/javascript" src="../js/view/exp1b.js"></script>
+		<script type="text/javascript" src="../js/view/exp8.js"></script>
+		<script type="text/javascript" src="../js/view/exp9.js"></script>
+		<script type="text/javascript" src="../js/view/exp7a.js"></script>
+		<script type="text/javascript" src="../js/view/exp7b.js"></script>
+		<script type="text/javascript" src="../js/view/exp4a.js"></script>
+		<script type="text/javascript" src="../js/view/exp6b.js"></script>
+		<script type="text/javascript" src="../js/view/exp4b.js"></script>
+		<script type= "text/javascript" src="../js/view/exp10a.js"></script>
+		<script type="text/javascript" src="../js/view/exp10b.js"></script>
+		<script type="text/javascript" src="../js/view/viewGraph.js"></script>
+		<!-- <script type="text/javascript" src="js/view/complexNumber.js"></script> -->
+		<script type="text/javascript" src="../js/view/deleteTableRow.js"></script>
+	</head>
+	<body>
+		<div id="tabs">
+			<ul>
+				<div class = "imag">
+					<img src="../images/coep_logo_sim.png">
+					<div>
+						<label  align="left" style="font-size:20px;margin-top:-66px; color: #ffffff;float: left;" >Load Test on Separately Excited DC Motor</label>
+					</div>
+				</div>
+			</ul>
+			<div id="example" class="k-content">
+				<div id="horizontal" style="height: 100%; width: 100%;">
+					<div id = "leftpanel" >
+						<!--p>
+						Control Panel
+						</p-->
+						<br/>
+						<ul id="panelbar" class="draggable" >
+							<li>
+								Control Panel
+								<ul>
+									<li>
+										Components
+										<ul>
+											<li>
+												Machines
+												<ul>
+													<li>
+														Generators
+														<ul>
+															<li>
+																D.C Generator
+																<ul>
+																	<li id = "sepExcited" class = "drag">
+																		Separately Excited
+																	</li>
+																	<li id = "selfExcited" class = "drag">
+																		Self Excited[Shunt]
+																	</li>
+																</ul>
+															</li>
+															<li>
+																Synchronous Generator
+																<ul>
+																	<li id = "salientRotor" class = "drag">
+																		Salient Pole Rotor
+																	</li>
+																	<li id = "cylinRotor" class = "drag">
+																		Cylindrical Rotor
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<li>
+														Motors
+														<ul>
+															<li>
+																D.C Motor
+																<ul>
+																	<li id = "dcsExcited" class = "drag">
+																		Separately Excited
+																	</li>
+																	<li id = "dcselfExcited" class = "drag">
+																		Self Excites[Shunt]
+																	</li>
+																</ul>
+															</li>
+															<li>
+																Synchronous Motor
+																<ul>
+																	<li id = "synsalRotor" class = "drag">
+																		Salient Pole Rotor
+																	</li>
+																	<li id = "syncylinRotor" class = "drag">
+																		Cylindrical Rotor
+																	</li>
+																</ul>
+															</li>
+															<li>
+																Induction Motor
+																<ul>
+																	<li id = "squirRotor" class = "drag">
+																		Squirrle Cage Rotor
+																	</li>
+																	<li id = "slippingRotor" class = "drag">
+																		Slipping Rotor
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>
+												Sources
+												<ul>
+													<li>
+														A.C
+														<ul>
+															<li id = "acsinPhase" class = "drag">
+																Single Phase
+															</li>
+															<li id = "acthreePhase" class = "drag">
+																Three Phase
+															</li>
+														</ul>
+													</li>
+													<li>
+														D.C
+														<ul>
+															<li id = "dcFixed" class = "drag">
+																Fixed
+															</li>
+															<li id = "dcVariable" class = "drag">
+																Variable
+															</li>
+														</ul>
+													</li>
+													<li id = "threephiVVF" class = "drag">
+														3-&#934; VVVF
+													</li>
+													<li id = "onephiVVF" class = "drag">
+														1-&#934; VVVF
+													</li>
+												</ul>
+											</li>
+											<li>
+												Load
+												<ul>
+													<li>
+														Single Phase
+														<ul>
+															<li id = "spresisLoad" class = "drag">
+																Resistive Load
+															</li>
+															<li id = "sprlLoad" class = "drag">
+																R-L Load
+															</li>
+															<li id = "sprcLoad" class = "drag">
+																R-C Load
+															</li>
+														</ul>
+													</li>
+													<li>
+														Three Phase
+														<ul>
+															<li id = "threepresisLoad" class = "drag">
+																Resistive Load
+															</li>
+															<li id = "threeprlLoad" class = "drag">
+																R-L Load
+															</li>
+															<li id = "threeprcLoad" class = "drag">
+																R-C Load
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>
+												Measuring Instruments
+												<ul>
+													<li>
+														Ammeter
+														<ul>
+															<li id = "miammdc" class = "drag">
+																D.C
+															</li>
+															<li id = "miammac" class = "drag">
+																A.C
+															</li>
+														</ul>
+													</li>
+													<li>
+														Voltameter
+														<ul>
+															<li id = "mivoltdc" class = "drag">
+																D.C
+															</li>
+															<li id = "mivoltac" class = "drag">
+																A.C
+															</li>
+														</ul>
+													</li>
+													<li>
+														Wattmeter
+														<ul>
+															<li id = "miwattnormal" class = "drag">
+																Normal Wattmeter
+															</li>
+															<li id = "miwattlowfactor" class = "drag">
+																Low Power Factor Wattmeter
+															</li>
+														</ul>
+													</li>
+													<li id = "mipowerfactor" class = "drag">
+														Power factor Meter
+													</li>
+													<li id = "mitachometer" class = "drag">
+														Tachometer
+													</li>
+												</ul>
+											</li>
+											<li>
+												Others
+												<ul>
+													<li id = "coupling" class = "drag">
+														Coupling
+													</li>
+													<li>
+														Variac
+														<ul>
+															<li id = "varsinglePhase" class = "drag">
+																Single Phase(A.C)
+															</li>
+															<li id = "varthreePhase" class = "drag">
+																Three Phase(A.C)
+															</li>
+															<li>
+																Variable Voltage Variable Frequency
+																<ul>
+																	<li id = "vvvfsinglePhase" class = "drag">
+																		Single Phase
+																	</li>
+																	<li id = "vvvfthreePhase" class = "drag">
+																		Three Phase
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<li id = "rheostat" class = "drag">
+														Rheostat
+													</li>
+													<li>
+														Switches
+														<ul>
+															<li id = "swispst" class = "drag">
+																SPST
+															</li>
+															<li id = "swidpst" class = "drag">
+																DPST
+															</li>
+															<li id = "swidpdt" class = "drag">
+																DPDT
+															</li>
+															<li id = "switpst" class = "drag">
+																TPST
+															</li>
+															<li id = "switpdt" class = "drag">
+																TPDT
+															</li>
+														</ul>
+													</li>
+													<li id = "shortCircuit" class = "drag">
+														Short Circuit Link
+													</li>
+													<li id = "byPass" class = "drag">
+														By Pass Link
+													</li>
+													<li id = "mechRotor" class = "drag">
+														Mechanical Rotor Block
+													</li>
+												</ul>
+										</ul>
+								</ul>
+							</li>
+							<li id = "exp2" class = "drag">
+								Experiment No. 1
+							</li>
+						</ul>
+					</div>
+					<div id = "main" style="height: 100%; width: 200px;">
+						<div id = "workspace" style="height:954px; width: 100%; margin-left: 200px margin-top:300px;" >
+							<p>
+								Workspace
+							</p>
+						</div>
+						<div id ="buttonAll">
+					         <ul id="tmp">
+					
+									<li>
+										&nbsp; &nbsp;&nbsp; <a class="button green" href="#" id="store-data"> Start Storing Data</a>
+									</li>
+									<li>
+										&nbsp; &nbsp; &nbsp; <a class="button green" href="#" id="show-data">Show Data</a>
+									</li>
+									<li>
+										&nbsp; &nbsp; &nbsp; <a class="button green" href="#" id="clear-data">Clear Data</a>
+									</li>
+									<li>
+										&nbsp; &nbsp; &nbsp; 
+										 <ul id="menu" >
+											<li id="graph-options" >
+												<a href="#" >Select</a><ul id="myid" class="sub-menu"></ul>
+											</li>
+										</ul> 
+									</li>
+									<li>
+										&nbsp; &nbsp; &nbsp; <a class="button green" href="#" id="generate-graph">generate Graph</a>
+									</li>
+								
+									<li>
+											&nbsp; &nbsp; &nbsp;<input type="button" id= "refresh" class="button green" value="Refresh" />
+									</li>
+							
+
+							</ul>
+							<br>
+							<br>
+							<br>
+							<br>
+							<!--table cellspacing="25">
+							<tr>
+							<td><a class="button green" href="#" id="store-data"> Start Storing Data</a></td>
+							<td><a class="button green" href="#" id="show-data">Show Data</a></td>
+							<td><a class="button green" href="#" id="clear-data">Clear Data</a></td>
+							<td id="sub">
+							<ul id="menu">
+							<li id="graph-options">
+							<a href="#">Select</a><ul id="myid" class="sub-menu"></ul>
+							</li>
+							</ul></td>
+
+							<td><a class="button green" href="#" id="generate-graph">generate Graph</a></td>
+							<td>
+							<input type="button" id= "refresh" class="button green" value="Refresh" />
+							</td>
+							</tr>
+							</table-->
+							<br>
+							<br>
+							<br>
+							<br>
+						</div>
+						<div id = "graph" style= "float:left; height: 500px;width: 50%;">
+							<!-- <p>
+							Generate graph
+							</p> -->
+						</div>
+						<div id="showdata" style="height: 500px; width: 45%; margin-left: 567px;">
+							<!--p>
+							Data
+							</p-->
+							<div style="overflow: auto; overflow-y: auto;">
+								<table border="0" id="data-table"style="height: 50px;width:440px;" ></table>
+							</div>
+							</div >
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="position:absolute;margin-top:900px; width:1350px;margin:0 auto;">
+				<div class="art-footer">
+					<div class="art-footer-t"></div>
+					<div class="art-footer-l"></div>
+					<div class="art-footer-b"></div>
+					<div class="art-footer-r"></div>
+					<div class="art-footer-body" >
+						<a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text art-footer-psr">
+							<p>
+								<a href="#">About Us</a> | <a href="./../../../contacts.htm">Contact Us</a> | <a href="./../../../feedback.htm">Feedback</a>
+							</p>
+							<p>
+								Copyright &#169;2011.COEP Virtual Lab.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
