@@ -25,7 +25,7 @@ edit -->
     <div id="lab-header-logo" class="logo">
       <!-- Enclose the logo image of your lab or write it in 
       text-->
-      <img src="images/logo.jpg" />
+      <img src="images/logo.png" />
     </div>
 
     <div id="lab-header-heading" class="heading">
@@ -82,7 +82,7 @@ edit -->
       <section id="lab-article-section-1">
         <div id="lab-article-section-1-icon" class="icon">
           <!-- Enclose the icon image for the section. -->
-	  <img src="images/introduction.jpg" />
+	  <img src="images/introduction.png" />
 	</div>
 
 
@@ -111,7 +111,7 @@ edit -->
         
         <div id="lab-article-section-2-icon" class="icon">
           <!-- Enclose the icon image for the section. -->
-	  <img src="images/simulation.jpg" />
+	  <img src="images/content_4.png" />
 	</div>
 
 
@@ -128,58 +128,32 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="ElectricalMachineLab/Exp1/index.html">Load Test On Separately Excited DC Motor</a> 
+	      <a href="Exp1/index.html">Load Test On Separately Excited DC Motor</a> 
 	    </li>
-	  </ul>
-	</div>
-
-	<div id="lab-article-section-2-content" class="content">
-	  <ul id="list-of-experiments">
-	  
+	 
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="ElectricalMachineLab/Exp2/index.html">Speed Control of Separately Excited DC Motor </a> 
+	      <a href="Exp2/index.html">Speed Control of Separately Excited DC Motor </a> 
 	    </li>
-	  </ul>
-	</div>
 	
-<div id="lab-article-section-2-content" class="content">
-	  <ul id="list-of-experiments">
-	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="ElectricalMachineLab/Exp3/index.html">No Load Test on Three Phase Induction Motor</a> 
+	      <a href="Exp3/index.html">No Load Test on Three Phase Induction Motor</a> 
 	    </li>
-	  </ul>
-	</div>
-
-
-<div id="lab-article-section-2-content" class="content">
-	  <ul id="list-of-experiments">
-	  
+	 
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="ElectricalMachineLab/Exp4/index.html">Blocked Rotor Test on Three Phase Induction Motor</a> 
+	      <a href="Exp4/index.html">Blocked Rotor Test on Three Phase Induction Motor</a> 
 	    </li>
-	  </ul>
-	</div>
-
-<div id="lab-article-section-2-content" class="content">
-	  <ul id="list-of-experiments">
-	  
+	 
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="ElectricalMachineLab/Exp5/index.html">Open Circuit Test on Three Phase Alternator</a> 
+	      <a href="Exp5/index.html">Open Circuit Test on Three Phase Alternator</a> 
 	    </li>
-	  </ul>
-	</div>
 	
-<div id="lab-article-section-2-content" class="content">
-	  <ul id="list-of-experiments">
-	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="ElectricalMachineLab/Exp6/index.html">Short Circuit Test on Three Phase Alternator</a> 
+	      <a href="Exp6/index.html">Short Circuit Test on Three Phase Alternator</a> 
 	    </li>
 	  </ul>
 	</div>	
@@ -189,7 +163,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="ElectricalMachineLab/Exp7/index.html">Load Test on Three Phase Alternator</a> 
+	      <a href="Exp7/index.html">Load Test on Three Phase Alternator</a> 
 	    </li>
 	  </ul>
 	</div>	
@@ -199,7 +173,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="ElectricalMachineLab/Exp8/index.html">V and Inverted V curves of Synchronous Motor</a> 
+	      <a href="Exp8/index.html">V and Inverted V curves of Synchronous Motor</a> 
 	    </li>
 	  </ul>
 	</div>	
