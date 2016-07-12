@@ -1,0 +1,156 @@
+#+title: Requirement/Workflow for Electrical machines Lab
+#+Author: Integration Team
+#+Date: [2016-06-30]
+
+This document contains the basic work flow and requirement for Electrical machines Lab.Testing should happen against all the requirements mentioned in this document by integration team.
+
+* Lab wise requirements
+
+Main page Should contain following tabs for Electrical machines Lab with
+the content related to the introduction.
+
+** Introduction
+
+Content should display on page related to the introduction of Electrical machines Lab.
+
+** List of experiments
+
+List of experiment related to Electrical machines Lab should display on page.
+
+* Experiment wise requirements
+
+** Load test on separately excited DC motor Experiment
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test, Review Questions,Reference,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link, Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator:When we click on Simulator tab,simulator link should get open.This link should open with simulation and relevant information.
+
+  Here user needs to drag and drop the components in the workspace and all circuits should be properly working.To perform the experiment user should drag "Experiment 1" in the workspace which is at end of the list, which should open the the diagram.
+  Here user should be able to do switching operation and and increase and decrease the values and observe the experiments.
+  
+  Different buttons are given at bottom of experiment, that should work according to functions.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Speed control of separately excited DC motor Experiment
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test, Review Questions,Reference,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link, Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator:When we click on Simulator tab,simulator link should get open.This link should open with simulation and relevant information.
+
+  Here user needs to drag and drop the components in the workspace and all circuits should be properly working.To perform the experiment user should drag "Experiment 2" in the workspace which is at end of the list, which should open the the diagram.
+  Here user should be able to do switching operation and and increase and decrease the values and observe the experiments.
+  
+  Different buttons are given at bottom of experiment, that should work according to functions.
+ 
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.
+ 
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** No load test on three phase induction motor Experiment
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test, Review Questions,Reference,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link, Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator:When we click on Simulator tab,simulator link should get open.This link should open with simulation and relevant information.
+
+  Here user needs to drag and drop the components in the workspace and all circuits should be properly working.To perform the experiment user should drag "Experiment 3" in the workspace which is at end of the list, which should open the the diagram.
+  Here user should be able to do switching operation and and increase and decrease the values and observe the experiments.
+  
+  Different buttons are given at bottom of experiment, that should work according to functions.
+  
+ - Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button. 
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Blocked rotor test on three phase induction motor Experiment
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test, Review Questions,Reference,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link, Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator:When we click on Simulator tab,simulator link should get open.This link should open with simulation and relevant information.
+
+  Here user needs to drag and drop the components in the workspace and all circuits should be properly working.To perform the experiment user should drag "Experiment 4" in the workspace which is at end of the list, which should open the the diagram.
+  Here user should be able to do switching operation and and increase and decrease the values and observe the experiments.
+  
+  Different buttons are given at bottom of experiment, that should work according to functions.
+  
+-Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button. 
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Open circuit test on three phase alternator Experiment
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test, Review Questions,Reference,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link, Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator:When we click on Simulator tab,simulator link should get open.This link should open with simulation and relevant information.
+
+  Here user needs to drag and drop the components in the workspace and all circuits should be properly working.To perform the experiment user should drag "Experiment 5" in the workspace which is at end of the list, which should open the the diagram.
+  Here user should be able to do switching operation and and increase and decrease the values and observe the experiments.
+  
+  Different buttons are given at bottom of experiment, that should work according to functions.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button. 
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Short circuit test on three phase alternator Experiment
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test, Review Questions,Reference,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link, Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator:When we click on Simulator tab,simulator link should get open.This link should open with simulation and relevant information.
+
+  Here user needs to drag and drop the components in the workspace and all circuits should be properly working.To perform the experiment user should drag "Experiment 6" in the workspace which is at end of the list, which should open the the diagram.
+  Here user should be able to do switching operation and and increase and decrease the values and observe the experiments.
+  
+  Different buttons are given at bottom of experiment, that should work according to functions.
+  
+- Posttest tab: when we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Load test on three phase alternator Experiment
+
+It should contain the Aim,Pretest,Theory,Procedure,Audio/Video,Post test, Review Questions,Reference,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab: When we click on the  Pretest link, Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator:When we click on Simulator tab,simulator link should get open.This link should open with simulation and relevant information.
+
+  Here user needs to drag and drop the components in the workspace and all circuits should be properly working.To perform the experiment user should drag "Experiment 7" in the workspace which is at end of the list, which should open the the diagram.
+  Here user should be able to do switching operation and and increase and decrease the values and observe the experiments.
+  
+  Different buttons are given at bottom of experiment,that should work according to functions.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** V and inverted V curves of synchronous motor Experiment
+
+It should contain the Aim,Pretest,Theory,Procedure,Audio/Video,Post test, Review Questions,Reference,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link,Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator:When we click on Simulator tab,simulator link should get open.This link should open with simulation and relevant information.
+
+  Here user needs to drag and drop the components in the workspace and all circuits should be properly working.To perform the experiment user should drag "Experiment 8" in the workspace which is at end of the list, which should open the the diagram.
+  Here user should be able to do switching operation and and increase and decrease the values and observe the experiments.
+  
+  Different buttons are given at bottom of experiment,that should work according to functions.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button. 
+  
+-Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
